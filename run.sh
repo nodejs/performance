@@ -70,8 +70,8 @@ case $USE_CASE in
 esac
 
 # build master
-./configure
-make -j${MACHINE_THREADS}
+./configure  > ../node-master-build.log
+make -j${MACHINE_THREADS}  >> ../node-master-build.log
 mv out/Release/node ./node-master
 
 # build pr
@@ -83,8 +83,8 @@ case $USE_CASE in
 	git checkout $TARGET
 	;;
 esac
-./configure
-make -j${MACHINE_THREADS}
+./configure > ../node-pr-build.log
+make -j${MACHINE_THREADS} >> ../node-pr-build.log
 mv out/Release/node ./node-pr
 if [ -n "$FILTER" ]; then
 	FILTER="--filter ${FILTER}"
@@ -93,5 +93,10 @@ if [ -n "$RUNS" ]; then
 	RUNS="--runs ${RUNS}"
 fi
 # run benchmark
-./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee output.csv
-cat output.csv | Rscript benchmark/compare.R
+fileName=output`date +%d%m%y-%H%M%S`.csv
+echo "Output will be saved to $fileName"
+pwd
+./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
+
+cat $fileName | Rscript benchmark/compare.R
+mv $fileName $startDir
