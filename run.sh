@@ -77,7 +77,7 @@ mv out/Release/node ./node-master
 # build pr
 case $USE_CASE in
 1)
-        curl https://patch-diff.githubusercontent.com/raw/nodejs/node/pull/${PULL_ID}.patch|git apply
+        curl -L https://github.com/nodejs/node/pull/${PULL_ID}.patch|git apply -3
 	;;
 2)
 	git checkout $TARGET
