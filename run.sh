@@ -70,6 +70,9 @@ case $USE_CASE in
 esac
 
 # build master
+# select the appropriate compiler
+curl -sLO https://raw.githubusercontent.com/nodejs/build/master/jenkins/scripts/select-compiler.sh
+. ./select-compiler.sh
 ./configure  > ../node-master-build.log
 make -j${MACHINE_THREADS}  >> ../node-master-build.log
 mv out/Release/node ./node-master
@@ -83,6 +86,8 @@ case $USE_CASE in
 	git checkout $TARGET
 	;;
 esac
+# select the appropriate compiler
+. ./select-compiler.sh
 ./configure > ../node-pr-build.log
 make -j${MACHINE_THREADS} >> ../node-pr-build.log
 mv out/Release/node ./node-pr
