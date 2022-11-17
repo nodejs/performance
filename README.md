@@ -13,7 +13,7 @@ For the current list of team members, see the project
 * [anonrig](https://github.com/anonrig) - **Yagiz Nizipli**
 * [Ethan-Arrowood](https://github.com/Ethan-Arrowood) - **Ethan Arrowood**
 * [ulisesGascon](https://github.com/ulisesGascon) - **Ulises Gascon**
-
+* [RafaelGSS](https://github.com/RafaelGSS) - **Rafael Gonzaga**
 
 ## Collaborators
 
