@@ -11,6 +11,7 @@ For the current list of team members, see the project
 ## Current Project Team Members
 
 * [anonrig](https://github.com/anonrig) - **Yagiz Nizipli**
+* [ulisesGascon](https://github.com/ulisesGascon) - **Ulises Gascon**
 
 ## Collaborators
 
