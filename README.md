@@ -10,11 +10,15 @@ For the current list of team members, see the project
 
 ## Current Project Team Members
 
+<!-- ncu-team-sync.team(nodejs/performance) -->
+
 * [anonrig](https://github.com/anonrig) - **Yagiz Nizipli**
 * [Ethan-Arrowood](https://github.com/Ethan-Arrowood) - **Ethan Arrowood**
 * [ulisesGascon](https://github.com/ulisesGascon) - **Ulises Gascon**
 * [RafaelGSS](https://github.com/RafaelGSS) - **Rafael Gonzaga**
 * [santigimeno](https://github.com/santigimeno) - **Santiago Gimeno**
+
+<!-- ncu-team-sync end -->
 
 ## Collaborators
 
