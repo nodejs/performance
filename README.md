@@ -12,11 +12,26 @@ For the current list of team members, see the project
 
 <!-- ncu-team-sync.team(nodejs/performance) -->
 
-* [anonrig](https://github.com/anonrig) - **Yagiz Nizipli**
-* [Ethan-Arrowood](https://github.com/Ethan-Arrowood) - **Ethan Arrowood**
-* [ulisesGascon](https://github.com/ulisesGascon) - **Ulises Gascon**
-* [RafaelGSS](https://github.com/RafaelGSS) - **Rafael Gonzaga**
-* [santigimeno](https://github.com/santigimeno) - **Santiago Gimeno**
+* [@anonrig](https://github.com/anonrig) - Yagiz Nizipli
+* [@apapirovski](https://github.com/apapirovski) - Anatoli Papirovski
+* [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
+* [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
+* [@BridgeAR](https://github.com/BridgeAR) - Ruben Bridgewater
+* [@ErickWendel](https://github.com/ErickWendel) - Erick Wendel
+* [@Ethan-Arrowood](https://github.com/Ethan-Arrowood) - Ethan Arrowood
+* [@F3n67u](https://github.com/F3n67u) - Feng Yu
+* [@fhinkel](https://github.com/fhinkel) - F. Hinkelmann
+* [@gareth-ellis](https://github.com/gareth-ellis) - Gareth Ellis
+* [@gibfahn](https://github.com/gibfahn) - Gibson Fahnestock
+* [@joyeecheung](https://github.com/joyeecheung) - Joyee Cheung
+* [@mcollina](https://github.com/mcollina) - Matteo Collina
+* [@RafaelGSS](https://github.com/RafaelGSS) - Rafael Gonzaga
+* [@santigimeno](https://github.com/santigimeno) - Santiago Gimeno
+* [@sxa](https://github.com/sxa) - Stewart X Addison
+* [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
+* [@tniessen](https://github.com/tniessen) - Tobias Nießen
+* [@trevnorris](https://github.com/trevnorris) - Trevor Norris
+* [@UlisesGascon](https://github.com/UlisesGascon) - Ulises Gascón
 
 <!-- ncu-team-sync end -->
 
