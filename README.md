@@ -23,6 +23,7 @@ For the current list of team members, see the project
 * [@fhinkel](https://github.com/fhinkel) - F. Hinkelmann
 * [@gareth-ellis](https://github.com/gareth-ellis) - Gareth Ellis
 * [@gibfahn](https://github.com/gibfahn) - Gibson Fahnestock
+* [@H4ad](https://github.com/H4ad) - Vinícius Lourenço
 * [@joyeecheung](https://github.com/joyeecheung) - Joyee Cheung
 * [@mcollina](https://github.com/mcollina) - Matteo Collina
 * [@RafaelGSS](https://github.com/RafaelGSS) - Rafael Gonzaga
