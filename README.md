@@ -26,6 +26,7 @@ For the current list of team members, see the project
 * [@H4ad](https://github.com/H4ad) - Vinícius Lourenço
 * [@joyeecheung](https://github.com/joyeecheung) - Joyee Cheung
 * [@mcollina](https://github.com/mcollina) - Matteo Collina
+* [@qard](https://github.com/qard) - Stephen Belanger
 * [@RafaelGSS](https://github.com/RafaelGSS) - Rafael Gonzaga
 * [@santigimeno](https://github.com/santigimeno) - Santiago Gimeno
 * [@sheplu](https://github.com/sheplu) - Jean Burellier
