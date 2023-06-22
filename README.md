@@ -26,6 +26,7 @@ For the current list of team members, see the project
 * [@H4ad](https://github.com/H4ad) - Vinícius Lourenço
 * [@joyeecheung](https://github.com/joyeecheung) - Joyee Cheung
 * [@mcollina](https://github.com/mcollina) - Matteo Collina
+* [@qard](https://github.com/qard) - Stephen Belanger
 * [@RafaelGSS](https://github.com/RafaelGSS) - Rafael Gonzaga
 * [@santigimeno](https://github.com/santigimeno) - Santiago Gimeno
 * [@sheplu](https://github.com/sheplu) - Jean Burellier
@@ -34,7 +35,6 @@ For the current list of team members, see the project
 * [@tniessen](https://github.com/tniessen) - Tobias Nießen
 * [@trevnorris](https://github.com/trevnorris) - Trevor Norris
 * [@UlisesGascon](https://github.com/UlisesGascon) - Ulises Gascón
-* [@qard](https://github.com/qard) - Stephen Belanger
 
 <!-- ncu-team-sync end -->
 
