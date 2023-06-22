@@ -34,6 +34,7 @@ For the current list of team members, see the project
 * [@tniessen](https://github.com/tniessen) - Tobias Nießen
 * [@trevnorris](https://github.com/trevnorris) - Trevor Norris
 * [@UlisesGascon](https://github.com/UlisesGascon) - Ulises Gascón
+* [@qard](https://github.com/qard) - Stephen Belanger
 
 <!-- ncu-team-sync end -->
 
