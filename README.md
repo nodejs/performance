@@ -28,6 +28,7 @@ For the current list of team members, see the project
 * [@mcollina](https://github.com/mcollina) - Matteo Collina
 * [@qard](https://github.com/qard) - Stephen Belanger
 * [@RafaelGSS](https://github.com/RafaelGSS) - Rafael Gonzaga
+* [@rluvaton](https://github.com/rluvaton) - Raz Luvaton
 * [@santigimeno](https://github.com/santigimeno) - Santiago Gimeno
 * [@sheplu](https://github.com/sheplu) - Jean Burellier
 * [@sxa](https://github.com/sxa) - Stewart X Addison
