@@ -17,6 +17,7 @@ For the current list of team members, see the project
 * [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 * [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 * [@BridgeAR](https://github.com/BridgeAR) - Ruben Bridgewater
+* [@CanadaHonk](https://github.com/CanadaHonk) - CanadaHonk
 * [@ErickWendel](https://github.com/ErickWendel) - Erick Wendel
 * [@Ethan-Arrowood](https://github.com/Ethan-Arrowood) - Ethan Arrowood
 * [@F3n67u](https://github.com/F3n67u) - Feng Yu
