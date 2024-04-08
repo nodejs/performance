@@ -101,7 +101,7 @@ fi
 fileName=output`date +%d%m%y-%H%M%S`.csv
 echo "Output will be saved to $fileName"
 pwd
-./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
+./node-master benchmark/compare.js --set CPUSET=0 --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
 
 cat $fileName | Rscript benchmark/compare.R
 mv $fileName $startDir
