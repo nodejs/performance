@@ -57,7 +57,7 @@ getMACHINE_THREADS=`cat /proc/cpuinfo |grep processor|tail -n1|awk {'print $3'}`
 let getMACHINE_THREADS=getMACHINE_THREADS+1 #getting threads this way is 0 based. Add one
 optional MACHINE_THREADS $getMACHINE_THREADS
 rm -rf node
-git clone http://github.com/nodejs/node.git
+git clone https://github.com/nodejs/node.git
 cd node
 case $USE_CASE in
 1)
@@ -100,7 +100,9 @@ fi
 fileName=output`date +%d%m%y-%H%M%S`.csv
 echo "Output will be saved to $fileName"
 pwd
-./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
+
+# Run on performance cores
+taskset -c 0-11 ./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
 
 cat $fileName | Rscript benchmark/compare.R
 mv $fileName $startDir
