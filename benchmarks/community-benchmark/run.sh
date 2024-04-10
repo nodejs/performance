@@ -57,7 +57,7 @@ getMACHINE_THREADS=`cat /proc/cpuinfo |grep processor|tail -n1|awk {'print $3'}`
 let getMACHINE_THREADS=getMACHINE_THREADS+1 #getting threads this way is 0 based. Add one
 optional MACHINE_THREADS $getMACHINE_THREADS
 rm -rf node
-git clone http://github.com/nodejs/node.git
+git clone https://github.com/nodejs/node.git
 cd node
 case $USE_CASE in
 1)
