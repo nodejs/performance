@@ -38,6 +38,7 @@ echo "The following are optional across both use cases"
 echo "RUNS = defaults to empty"
 echo "FILTER = defaults to empty"
 echo "MACHINE_THREADS - used for building node. Defaults to all threads on machine"
+echo "CPUSET - used for pinning to specific CPU cores. Default to 0-11 (performance cores)"
 }
 
 if [ -z $PULL_ID ]; then
@@ -53,6 +54,7 @@ fi
 mandatory CATEGORY
 optional RUNS 
 optional FILTER
+optional CPUSET "0-11"
 getMACHINE_THREADS=`cat /proc/cpuinfo |grep processor|tail -n1|awk {'print $3'}`
 let getMACHINE_THREADS=getMACHINE_THREADS+1 #getting threads this way is 0 based. Add one
 optional MACHINE_THREADS $getMACHINE_THREADS
@@ -96,13 +98,16 @@ fi
 if [ -n "$RUNS" ]; then
 	RUNS="--runs ${RUNS}"
 fi
+if [ -n "$CPUSET" ]; then
+  CPUSET="--set CPUSET=${CPUSET}"
+fi
 # run benchmark
 fileName=output`date +%d%m%y-%H%M%S`.csv
 echo "Output will be saved to $fileName"
 pwd
 
 # Run on performance cores
-taskset -c 0-11 ./node-master benchmark/compare.js --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
+./node-master benchmark/compare.js $CPUSET --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
 
 cat $fileName | Rscript benchmark/compare.R
 mv $fileName $startDir
