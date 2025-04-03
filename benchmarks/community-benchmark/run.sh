@@ -1,4 +1,23 @@
 #!/bin/bash
+function assertShaLike() {
+    local shaVarName="${1}"
+    local sha="${!1}"
+    if [ -z "${sha}" ] || ! echo "${sha}" | grep -qE '^[0-9a-fA-F]+$'; then
+        echo "${shaVarName} (${sha}) does not look like a commit SHA"
+        exit
+    fi
+}
+
+function assertMatchesPullRequest() {
+    local shaVarName="${1}"
+    local sha="${!1}"
+    local pr_id="${!2}"
+    if [[ ! "$(git ls-remote origin refs/pull/${pr_id}/head)" =~ ^${sha}.*refs/pull/${pr_id}/head$ ]]; then
+        echo "${shaVarName} (${sha}) does not match HEAD for pull request ${pr_id}"
+        exit
+    fi
+}
+
 function mandatory() {
     if [ -z "${!1}" ]; then
         echo "${1} not set"
@@ -27,6 +46,7 @@ echo "The script expects the following variables to be set:"
 echo "CATEGORY = a category of tests to run - folders in benchmark/"
 echo "BRANCH = the branch the test should be based off. e.g. master"
 echo "PULL_ID = the pull request that contains changes to test"
+echo "TARGET = the SHA of the commit HEAD that contains changes to test"
 echo "-------------------------------------------------------------"
 echo "Use case 2: We want to compare two branches, tags or commits."
 echo "To run this, declare:"
@@ -50,6 +70,8 @@ else
 	export USE_CASE=1
 	mandatory BRANCH
 	mandatory PULL_ID
+	mandatory TARGET
+	assertShaLike TARGET
 fi
 mandatory CATEGORY
 optional RUNS 
@@ -63,6 +85,8 @@ git clone https://github.com/nodejs/node.git
 cd node
 case $USE_CASE in
 1)
+	# Validate TARGET and pull request HEAD are consistent
+	assertMatchesPullRequest TARGET PULL_ID
 	git checkout $BRANCH
 	;;
 2)
@@ -81,7 +105,7 @@ mv out/Release/node ./node-master
 # build pr
 case $USE_CASE in
 1)
-        curl -L https://github.com/nodejs/node/pull/${PULL_ID}.patch|git apply -3
+        curl -L "https://github.com/nodejs/node/compare/$(git rev-parse HEAD)...${TARGET}.patch"|git apply -3
 	;;
 2)
 	git checkout $TARGET
