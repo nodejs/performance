@@ -44,7 +44,7 @@ echo "Use case 1: We want to test the impact of a PR on a branch."
 echo "To run this, declare:"
 echo "The script expects the following variables to be set:"
 echo "CATEGORY = a category of tests to run - folders in benchmark/"
-echo "BRANCH = the branch the test should be based off. e.g. master"
+echo "BASE = the branch the test should be based off. e.g. master"
 echo "PULL_ID = the pull request that contains changes to test"
 echo "TARGET = the SHA of the commit HEAD that contains changes to test"
 echo "-------------------------------------------------------------"
@@ -68,7 +68,7 @@ if [ -z $PULL_ID ]; then
 	mandatory TARGET
 else
 	export USE_CASE=1
-	mandatory BRANCH
+	mandatory BASE
 	mandatory PULL_ID
 	mandatory TARGET
 	assertShaLike TARGET
@@ -87,7 +87,7 @@ case $USE_CASE in
 1)
 	# Validate TARGET and pull request HEAD are consistent
 	assertMatchesPullRequest TARGET PULL_ID
-	git checkout $BRANCH
+	git checkout $BASE
 	;;
 2)
 	git checkout $BASE
