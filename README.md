@@ -110,36 +110,6 @@ the team membership shares an employer, then the situation must be
 immediately remedied by the resignation or removal of one or more team
 members affiliated with the over-represented employer(s).
 
-## Team Meetings
-
-The team meets weekly on a Zoom On Air. A designated moderator
-approved by the team runs the meeting. Each meeting should be
-published to [YouTube](https://www.youtube.com/c/nodejs-foundation/streams).
-
-Items are added to the team agenda that are considered contentious or
-are modifications of governance, contribution policy, team membership,
-or release process.
-
-The intention of the agenda is not to approve or review all patches;
-that should happen continuously on GitHub and be handled by the larger
-group of Collaborators.
-
-Any community member or contributor can ask that something be added to
-the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
-team member or the moderator can add the item to the agenda by adding
-the ***performance-agenda*** tag to the issue.
-
-Prior to each team meeting the moderator will share the Agenda with
-members of the team. Team members can add any items they like to the
-agenda at the beginning of each meeting. The moderator and the team
-cannot veto or remove items.
-
-The team may invite persons or representatives from certain projects to
-participate in a non-voting capacity.
-
-The moderator is responsible for summarizing the discussion of each
-agenda item and sends it as a pull request after the meeting.
-
 ## Consensus Seeking Process
 
 The Performance Team follows a [Consensus Seeking][] decision-making model.
