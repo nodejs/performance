@@ -133,5 +133,5 @@ pwd
 # Run on performance cores
 ./node-master benchmark/compare.js $CPUSET --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
 
-cat $fileName | Rscript benchmark/compare.R
+./node-master ./deps/npm/bin/npx-cli.js -y node-benchmark-compare $fileName
 mv $fileName $startDir
