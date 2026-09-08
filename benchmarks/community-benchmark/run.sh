@@ -131,7 +131,5 @@ echo "Output will be saved to $fileName"
 pwd
 
 # Run on performance cores
-./node-master benchmark/compare.js $CPUSET --analyze --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY | tee $fileName
-
-./node-master ./deps/npm/bin/npx-cli.js -y node-benchmark-compare $fileName
+./node-master benchmark/compare.js $CPUSET --analyze --old ./node-master --new ./node-pr $FILTER $RUNS -- $CATEGORY
 mv $fileName $startDir
